@@ -1,0 +1,15 @@
+<div class="app">
+  <div class="angular-univ-container">
+    <img src="../assets/main-page-logo-small-hat.png">
+    <h1>Angular University</h1>
+    <a href="https://angular-university.io">angular-university.io</a>
+  </div>
+
+  
+  @if(!store.loading()) {
+    <todos-list/>    
+  }
+  @else {
+    <mat-spinner/>
+  }
+</div>
